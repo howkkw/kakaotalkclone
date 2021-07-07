@@ -1,0 +1,36 @@
+.friends_name_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 13px;
+  margin-bottom: 30px;
+}
+.friends_name_display span:nth-child(2) {
+  margin: 0px 5px;
+  opacity: 0.8;
+}
+.friends_name_display span:first-child,
+.friends_name_display span:last-child {
+  opacity: 0.2;
+}
+.channel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 0px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+.channel span {
+  font-size: 15px;
+  opacity: 0.4;
+}
+.icon_text_components_column:hover{
+  color:rgba(0,0,0,0.6);
+}
+.icon_text_components_column{
+  transition: 0.3s ease-in-out;
+}
