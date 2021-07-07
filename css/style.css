@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+@import "variables.css";
+
+/* components*/
+@import "components/icon_text_components.css";
+@import "components/main_header.css";
+@import "components/nav_bar.css";
+@import "components/setting_components.css";
+
+/*CSS*/
+@import "friends.css";
+@import "reset.css";
+@import "index.css";
+@import "chats.css";
+@import "search.css";
+@import "more.css";
+@import "setting.css";
+@import "chatting.css";
+
+
+body {
+  font-family: "Do Hyeon", sans-serif;
+}
+.main_margin {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.red_circle_icon {
+  background-color: tomato;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 13px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -4px;
+  right: -8px;
+}
+.more_icon{
+  justify-content: unset;
+}
+.more_icon_column .find_icon_column_icon
+{
+  font-size:30px;
+}
+@keyframes rotatecog{
+  from{ transform:rotateZ(180deg);
+
+  }
+  to{
+    transform:rotateZ(360deg);
+  }
+}
+.fa-cog{
+animation:rotatecog 1s linear infinite;
+}
+.fa-cog:hover,
+.fa-music:hover{
+  animation:none;
+}
+@keyframes scalemusic{
+  0%{transform:scale(1);
+
+  }
+  50%{
+    transform:scale(1.2);
+
+  }
+  100%{transform:scale(1);
+
+
+  }
+}
+.fa-music{
+  animation:scalemusic 1s ease-in-out infinite;
+  will-change: transform;
+}
+@keyframes rotateredicon{
+  0%{transform:translateY(0); 
+
+  }
+  50%{transform:translateY(-5px);
+    
+
+  }
+  100%{transform:translateY(0);
+   
+
+  }
+}
+.red_circle_icon{
+  animation:rotateredicon 1s ease-in-out infinite;
+}
+.open_kakao_page{
+  background-color:var(--yellow);
+  height:100vh;
+  width:100vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  top:0;
+  font-size:110px;
+  animation:fadeout 0.5s ease-in-out forwards;
+  animation-delay:1s;
+}
+@keyframes fadeout{
+  from{opacity:1;
+  z-index:2;}
+  to{opacity:0;
+  z-index:-1;}
+}
+@keyframes navbar{
+  from{transform: translateY(none);}
+  to{transform:translateY(-60px)}
+}
+
+.nav_bar_column:first-child{
+  animation:navbar 0.4s ease-in-out forwards;
+}
+.nav_bar_column:nth-child(2){
+  
+  animation:navbar 0.4s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+.nav_bar_column:nth-child(3){
+  
+  animation:navbar 0.4s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+.nav_bar_column:last-child{
+  
+  animation:navbar 0.4s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+.media_query{
+  background-color:var(--yellow);
+  height:100vh;
+  width:100vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  top:0;
+  font-size:50px;
+  z-index:99;
+}
+.chattingquery{
+  height:150vh;
+}
+
+@media screen and (max-width:580px){
+.media_query{
+  display:none;
+}
+}
+ee
