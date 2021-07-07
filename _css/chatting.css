@@ -1,0 +1,206 @@
+.setting_components_column .fa-bars {
+  margin-left: 25px;
+}
+.setting_components_column .fa-bars,
+.setting_components_column .fa-search {
+  cursor: pointer;
+}
+.chatting_body {
+  background-color: #abc1d1;
+  height: 130vh;
+}
+.chatting_date span {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 7px;
+  border-radius: 15px;
+}
+.chatting_date {
+  text-align: center;
+  margin-top: 120px;
+}
+.chatting_header {
+  position: fixed;
+  top: 0;
+  background-color: #abc1d1;
+  z-index: 3;
+}
+.chatting_icon_text_icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.chatting_icon_text,
+.chatting_icon_text_reply {
+  display: flex;
+  margin-top: 40px;
+}
+
+.chatting_icon_text {
+  margin-left: 25px;
+}
+.chatting_icon_text_reply {
+  margin-right: 25px;
+  justify-content: flex-end;
+}
+.chatting_icon_text_text_name {
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+.chatting_icon_text_text_contents_contents_reply,
+.chatting_icon_text_text_contents_contents {
+  padding: 10px;
+  border-radius: 13px;
+}
+.chatting_icon_text_text_contents_contents {
+  margin-right: 10px;
+  background-color: white;
+}
+.chatting_icon_text_text_contents_contents_reply {
+  border-top-right-radius: 0px;
+  margin-left: 10px;
+  background-color: var(--yellow);
+}
+.chatting_icon_text_text_contents_contents {
+  border-top-left-radius: 0px;
+}
+
+.chatting_icon_text_text_contents_date {
+  font-size: 13px;
+  opacity: 0.4;
+}
+.chatting_icon_text_text_contents {
+  display: flex;
+  align-items: flex-end;
+}
+.chatting_input_msg {
+  display: flex;
+  background-color: white;
+  padding: 5px 15px;
+  justify-content: stretch;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.chatting_input_msg_column input {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.01);
+  color: black;
+  margin-left: 5px;
+  font-size: 20px;
+  height: 25px;
+  width: 60vw;
+}
+.chatting_input_msg_column:first-child .fa-plus-square {
+  font-size: 35px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.chatting_input_msg_column:first-child {
+  margin-right: 15px;
+  width: 8vw;
+  justify-content: center;
+}
+.chatting_input_msg_column {
+  display: flex;
+  align-items: center;
+}
+.chatting_input_msg_column:last-child {
+  border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 3px;
+  width: 88vw;
+  position: relative;
+  margin-right: 15px;
+}
+.chatting_input_msg_column:last-child .fa-smile {
+  opacity: 0.4;
+  cursor: pointer;
+  font-size: 28px;
+  margin-right: 20px;
+  margin-left: 20px;
+  position: absolute;
+  right: 25px;
+}
+.chatting_input_msg_column:last-child .fa-arrow-up {
+  background-color: var(--yellow);
+  padding: 8px;
+  font-size: 17px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 0.4px;
+  top: 0.48px;
+}
+.keyboard {
+  background-color: #d1d4d9;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.keyboard_column {
+  display: flex;
+  justify-content: space-between;
+}
+.keyboard_btn_white,
+.keyboard_btn_black {
+  padding: 15px 13px;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 8px;
+}
+.keyboard_column {
+  margin-bottom: 10px;
+}
+.keyboard_column:last-child {
+  margin-bottom: 0px;
+}
+.keyboard_btn_white {
+  background-color: #ffffff;
+}
+.keyboard_btn_black {
+  background-color: #abb1ba;
+}
+.keyboard_space {
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.keyboard {
+  width: 97vw;
+  box-sizing: border-box;
+}
+
+.keyboard_input_set {
+  position: fixed;
+  bottom: -269px;
+  transition:0.1s ease-in-out;
+}
+.keyboard_input_set:focus-within{
+transform:translateY(-269px);
+} 
+.keyboard_column:nth-child(2){
+  padding-left:15px;
+  padding-right:15px;
+}
+@keyframes fadein{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+
+  
+  to{
+    opacity:1;
+
+  }
+}
+.chatting_date,
+.chatting_icon_text,
+.chatting_icon_text_reply{
+  animation:fadein 0.5s linear;
+}

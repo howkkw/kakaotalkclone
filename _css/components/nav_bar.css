@@ -1,0 +1,28 @@
+
+.nav_list{
+    
+    display:Flex;
+    justify-content: space-around;
+    position:fixed;
+bottom:0;
+background-color:rgba(0,0,0,0.03);
+padding:15px 0px;
+border-top:1px solid rgba(0,0,0,0.08);
+width:100%;
+box-sizing: border-box;
+ 
+    
+
+}
+.nav_bar_column{
+    font-size:35px;
+    
+}
+.nav_bar_column:nth-child(2){
+    position:relative;
+}
+.nav_bar_column{
+    position:relative;
+bottom:-60px;
+
+}

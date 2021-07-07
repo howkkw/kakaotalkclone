@@ -1,0 +1,56 @@
+.icon_text_components_column_contents_subtitle .fa-exclamation {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+}
+.icon_text_components_column_contents_subtitle span {
+  border: 1px solid red;
+  border-radius: 50%;
+  display: flex;
+  width: 13px;
+  height: 13px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+.icon_text_components_column_contents_subtitle {
+  display: flex;
+  align-items: center;
+}
+.icon_text_components_column_img {
+  display: flex;
+  align-items: center;
+}
+.more_components_subtitle {
+  opacity: 0.3;
+}
+.icon_text_components_column_img .fa-comment-alt {
+  font-size: 28px;
+}
+.more_icon .more_icon_column {
+  width: 25%;
+  justify-content: unset;
+}
+.more_icon_text_components{
+  margin-top:40px;
+}
+.more_icon_column{
+  width:25%;
+}
+.more_icon{
+  margin-bottom:45px;
+}
+.more_suggestion{
+  border-top:1px solid rgba(0,0,0,0.1);
+  padding-top:25px;
+}
+.find_icon_column_icon img{
+  width:60px;
+  height:60px;
+  border-radius: 10px;
+}
+.find_icon_list .more_icon_column{
+  cursor: pointer;
+}
